@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println("----Football Scoreboard----")
+	fmt.Println("----Football World Cup Score Board----")
 
 	gamescore1 := newScoreBoard("Germany", "Italy")
 	gamescore2 := newScoreBoard("France", "Portugal")
