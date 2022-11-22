@@ -22,3 +22,7 @@ func (score *scoreboard) updateScore(home_team_score int8, away_team_score int8)
   score.home_team_score = home_team_score
   score.away_team_score = away_team_score
 }
+
+func (score *scoreboard) finishGame(){
+  score = nil
+}

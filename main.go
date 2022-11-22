@@ -38,4 +38,8 @@ func main() {
       fmt.Printf("%s %d - %s %d\n", allScores[i].home_team, allScores[i].home_team_score, allScores[i].away_team, allScores[i].away_team_score)
     }
   }
+
+	fmt.Println("******Game Finished******")
+	nogame := newScoreBoard("", "") //remove team and score from the scoreboard
+  nogame.finishGame()
 }
