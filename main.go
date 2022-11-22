@@ -25,4 +25,17 @@ func main() {
 	allScores := []scoreboard{gamescore1, gamescore2, gamescore3}
 	fmt.Println(allScores)
   
+	fmt.Println("******Game Summary******")
+
+	for i := 0; i < len(allScores); i++ {
+    if allScores[i].away_team_score == allScores[i].home_team_score{
+      fmt.Printf("%s %d - %s %d\n", allScores[i].home_team, allScores[i].home_team_score, allScores[i].away_team, allScores[i].away_team_score)
+    }
+  }
+
+  for i := 0; i < len(allScores); i++ {
+    if allScores[i].away_team_score != allScores[i].home_team_score{
+      fmt.Printf("%s %d - %s %d\n", allScores[i].home_team, allScores[i].home_team_score, allScores[i].away_team, allScores[i].away_team_score)
+    }
+  }
 }
